@@ -100,29 +100,37 @@ public class TicTacToeBoard {
         }
 
         // Check vertical wins
-        for (int i = 0; i <= 4; i++) {
+        for (int i = 0; i <= 3; i++) {
             if (mBoard[i] == PLAYER_ONE &&
-                    mBoard[i + 3] == PLAYER_ONE)
+                    mBoard[i + 4] == PLAYER_ONE &&
+                    mBoard[i + 8] == PLAYER_ONE &&
+                    mBoard[i +12] ==  PLAYER_ONE)
                 return 2;
             if (mBoard[i] == PLAYER_TWO &&
-                    mBoard[i + 3] == PLAYER_TWO)
+                    mBoard[i + 4] == PLAYER_TWO &&
+                    mBoard[i + 8] == PLAYER_TWO &&
+                    mBoard[i+ 12]==PLAYER_TWO)
                 return 3;
         }
 
         // Check for diagonal wins
         if ((mBoard[0] == PLAYER_ONE &&
                 mBoard[5] == PLAYER_ONE &&
-                mBoard[10] == PLAYER_ONE && mBoard[15]==PLAYER_ONE )||
+                mBoard[10] == PLAYER_ONE && mBoard[15]==PLAYER_ONE) ||
                 mBoard[3] == PLAYER_ONE &&
                         mBoard[6] == PLAYER_ONE &&
-                        mBoard[9] == PLAYER_ONE && mBoard[12]==PLAYER_ONE)
+                        mBoard[9] == PLAYER_ONE &&
+                    mBoard[12]==PLAYER_ONE)
             return 2;
         if ((mBoard[0] == PLAYER_TWO &&
                 mBoard[5] == PLAYER_TWO &&
-                mBoard[10] == PLAYER_TWO && mBoard[15]==PLAYER_TWO) ||
-                mBoard[3] == PLAYER_TWO &&
+                mBoard[10] == PLAYER_TWO &&
+                mBoard[15]==PLAYER_TWO) ||
+
+                        mBoard[3] == PLAYER_TWO &&
                         mBoard[6] == PLAYER_TWO &&
-                        mBoard[9] == PLAYER_TWO && mBoard[12]==PLAYER_TWO)
+                        mBoard[9] == PLAYER_TWO &&
+                        mBoard[12]==PLAYER_TWO)
             return 3;
 
         // Check for a tie

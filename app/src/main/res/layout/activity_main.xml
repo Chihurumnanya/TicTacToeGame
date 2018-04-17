@@ -15,7 +15,7 @@
         android:gravity="center"
         android:textAllCaps="true"
         android:textStyle="italic"
-        android:text="Game Board"/>
+        android:text=" Default Game Board size (3x3)"/>
 
     <TableLayout
         android:id="@+id/playArea"
@@ -242,7 +242,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp">
+        android:layout_marginRight="24dp"
+        android:layout_gravity="center">
 
     <TextView
         android:id="@+id/tree"
@@ -254,7 +255,7 @@
         android:textColor="@android:color/black"
         android:text="4 X 4 Board Size"
         android:textAllCaps="true"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         android:layout_marginRight="4dp"/>
     <TextView
@@ -267,7 +268,7 @@
         android:textColor="@android:color/black"
         android:text="5 x 5 Board Size"
         android:textAllCaps="true"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold" />
     </LinearLayout>
 
